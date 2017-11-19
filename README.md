@@ -24,8 +24,6 @@ When clicking a opened window from the calendar, you should navigate to the "pre
 
 If the visitor tries to cheat and manually navigate to a day in the future, they should be redirected back to the calendar. No peeking
 
----
-
 ## How to approach this as a team
 
 During your sprint planning, your company should divide the 24 days of Advent between you, so you each have around 6 days - or recipes - to style up and decide how to display.
@@ -33,8 +31,6 @@ During your sprint planning, your company should divide the 24 days of Advent be
 Create a new page for each recipe, with a slightly different design from the other recipes. One suggestion is to have one common stylesheet which contains some core CSS which can be shared between pages, but then to use a seperate stylesheet for the current "present" which the visitor is looking at. This is up to your team to decide during your planning.
 
 **Don't forget to keep an eye on your CSS specificity**. For example, if you're building the recipe for December 7th, you could create a container `div` with classes like `present dec-7`. Then, in your CSS, always prefix your styles with `dec-7`. For example, you could have something like `.present.dec-7 .title { background: red; }`, etc..
-
----
 
 ## Recipes
 
@@ -64,8 +60,6 @@ Here are links to your 24 recipes. You'll find an image for each in the images f
 1. [Äppelpaj med knäckigt täcke](https://mittkok.expressen.se/recept/knackig-appelpaj-2/)
 1. [Semlor](http://www.leila.se/leilas-semlor/recept/bakverk/index1,23.htm?id=2853)
 1. [Citron och lime cheesecake](https://www.ica.se/recept/citron-och-limecheesecake-721946/)
-
----
 
 ### :boom: Success!
 
