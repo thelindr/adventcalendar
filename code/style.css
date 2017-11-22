@@ -1,3 +1,6 @@
+/*IMPORT OF FONTS USED: Montains of Christmas, Open Sans*/
+@import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Open+Sans");
+
 * {
   /*The width and height properties (and min/max properties) includes content, padding and border, but not the margin*/
   box-sizing: border-box;
@@ -12,6 +15,12 @@ html {
 body {
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 3.6em;
+  font-weight: normal;
 }
 
 main {
