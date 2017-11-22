@@ -1,6 +1,11 @@
 /*IMPORT OF FONTS USED: Montains of Christmas, Open Sans*/
 @import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Open+Sans");
 
+@font-face {
+    font-family: Cubano Regular;
+    src: url(./fonts/Cubano-Regular.otf);
+}
+
 * {
   /*The width and height properties (and min/max properties) includes content, padding and border, but not the margin*/
   box-sizing: border-box;
@@ -12,26 +17,35 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-.adv-cal-header {
-  /*blank*/
-}
-
-.adv-cal-header source,
-.adv-cal-header img {
-  width: 100%;
-}
-
 body {
   margin: 0;
   padding: 0;
 }
 
-
-
 h1 {
   font-family: 'Mountains of Christmas', cursive;
   font-size: 3.6em;
   font-weight: normal;
+}
+
+.adv-cal-startpage {
+  background: #f8f8f8 url("./images/background-desktop-03.png") 0 0 / 100% auto no-repeat;
+}
+
+.adv-cal-startpage h1,
+.adv-cal-startpage h2 {
+  font-family: 'Cubano Regular'
+}
+
+.adv-cal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+}
+
+.adv-cal-header-overlay {
+  text-align: center;
 }
 
 main {
