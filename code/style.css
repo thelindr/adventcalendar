@@ -7,15 +7,26 @@
 }
 
 html {
-  background: red;
+  background: #f8f8f8;
   color: white;
   font-family: 'Open Sans', sans-serif;
+}
+
+.adv-cal-header {
+  /*blank*/
+}
+
+.adv-cal-header source,
+.adv-cal-header img {
+  width: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
 }
+
+
 
 h1 {
   font-family: 'Mountains of Christmas', cursive;
