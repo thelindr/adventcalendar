@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 100px;
   padding: 0;
 }
 
@@ -41,7 +41,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 550px;
+  height: 420px;
 }
 
 .adv-cal-header-overlay {
@@ -60,10 +60,25 @@ main {
 
 /*ALL FLEXBOX ITEMS*/
 .window {
+  width: 24%;
   height: 300px;
+  background: grey;
+  margin: 0.5%;
 }
 
-.window-01 {
+.window-color-1 {
+  background: red;
+}
+
+.window-color-2 {
+  background: green;
+}
+
+.window-color-3 {
+  background: purple;
+}
+
+/*.window-01 {
   width: 25%;
   background: blue;
 }
@@ -181,4 +196,4 @@ main {
 .window-24 {
   width: 50%;
   background: yellow;
-}
+}*/
