@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  margin: 100px;
+  margin: 60px 100px 100px 100px;
   padding: 0;
 }
 
@@ -40,7 +40,17 @@ h1 {
 /*OVERRIDE DEFAULT H1 AND H2 FOR STARTPAGE*/
 .adv-cal-startpage h1,
 .adv-cal-startpage h2 {
-  font-family: 'Cubano Regular'
+  font-family: 'Cubano Regular';
+  margin: 10px;
+}
+
+.adv-cal-startpage h1 {
+  font-size: 4.3em;
+}
+
+.adv-cal-startpage h2 {
+  font-size: 1.5em;
+  letter-spacing: 2px;
 }
 
 /*HEADER FLEXBOX CONTAINER*/
@@ -48,7 +58,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 420px;
+  height: 370px;
 }
 
 /*HEADER FLEXBOX ITEM*/
@@ -69,10 +79,10 @@ main {
 /*ALL CALENDAR FLEXBOX ITEMS*/
 /*NOTE: EACH FLEXBOX ITEM IS ALSO A FLEXBOX CONTAINER IN ORDER TO ALIGN DAY NUMBER*/
 .window {
-  width: 24%;
-  height: 280px;
+  width: 23%;
+  height: 260px;
   background: grey;
-  margin: 0.5%;
+  margin: 0.6%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,17 +92,17 @@ main {
 
 /*CLOSED/DEFAULT WINDOW COLOR VARIANT 1*/
 .window-color-1 {
-  background: red;
+  background: #A1E3C3;
 }
 
 /*CLOSED/DEFAULT WINDOW COLOR VARIANT 2*/
 .window-color-2 {
-  background: green;
+  background: #4F8C69;
 }
 
 /*CLOSED/DEFAULT WINDOW COLOR VARIANT 3*/
 .window-color-3 {
-  background: purple;
+  background: #77B292;
 }
 
 /*DAY NUMBERS IN WINDOWS*/
