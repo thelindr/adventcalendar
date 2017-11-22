@@ -1,0 +1,6 @@
+/*IMPORT OF BASIC CSS*/
+@import '../style.css';
+
+html {
+  background: black;
+}
