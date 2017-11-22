@@ -1,0 +1,49 @@
+* {
+  /*The width and height properties (and min/max properties) includes content, padding and border, but not the margin*/
+  box-sizing: border-box;
+}
+
+html {
+  background: red;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  /*INTENTIONALLY LEFT BLANK*/
+}
+
+/*FLEXBOX CONTAINER*/
+.adv-cal-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*ALL FLEXBOX ITEMS*/
+.window {
+  height: 300px;
+}
+
+.window-1 {
+  width: 25%;
+  background: blue;
+}
+
+.window-2 {
+  width: 25%;
+  background: green;
+}
+
+.window-3 {
+  width: 50%;
+  background: yellow;
+}
+
+.window-4 {
+  width: 50%;
+  background: pink;
+}
