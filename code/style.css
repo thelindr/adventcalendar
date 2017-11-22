@@ -61,9 +61,14 @@ main {
 /*ALL FLEXBOX ITEMS*/
 .window {
   width: 24%;
-  height: 300px;
+  height: 280px;
   background: grey;
   margin: 0.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cubano Regular';
+  font-size: 5em;
 }
 
 .window-color-1 {
@@ -76,6 +81,11 @@ main {
 
 .window-color-3 {
   background: purple;
+}
+
+.window-text {
+  font-family: 'Cubano Regular';
+  font-size: 3em;
 }
 
 /*.window-01 {
