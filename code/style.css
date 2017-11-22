@@ -1,6 +1,7 @@
-/*IMPORT OF FONTS USED: Montains of Christmas, Open Sans*/
+/*IMPORT OF GOOGLE FONTS USED: Montains of Christmas, Open Sans*/
 @import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Open+Sans");
 
+/*ADD FONT-FAMILY NOT AVAILABLE VIA GOOGLE FONTS: Cubano Regular*/
 @font-face {
     font-family: Cubano Regular;
     src: url(./fonts/Cubano-Regular.otf);
@@ -28,15 +29,18 @@ h1 {
   font-weight: normal;
 }
 
+/*OVERRIDE DEFAULT BACKGROUND FOR STARTPAGE*/
 .adv-cal-startpage {
   background: #f8f8f8 url("./images/background-desktop-03.png") 0 0 / 100% auto no-repeat;
 }
 
+/*OVERRIDE DEFAULT H1 AND H2 FOR STARTPAGE*/
 .adv-cal-startpage h1,
 .adv-cal-startpage h2 {
   font-family: 'Cubano Regular'
 }
 
+/*HEADER FLEXBOX CONTAINER*/
 .adv-cal-header {
   display: flex;
   justify-content: center;
@@ -44,6 +48,7 @@ h1 {
   height: 420px;
 }
 
+/*HEADER FLEXBOX ITEM*/
 .adv-cal-header-overlay {
   text-align: center;
 }
@@ -52,13 +57,14 @@ main {
   /*INTENTIONALLY LEFT BLANK*/
 }
 
-/*FLEXBOX CONTAINER*/
+/*CALENDAR FLEXBOX CONTAINER*/
 .adv-cal-flexbox {
   display: flex;
   flex-wrap: wrap;
 }
 
-/*ALL FLEXBOX ITEMS*/
+/*ALL CALENDAR FLEXBOX ITEMS*/
+/*NOTE: EACH FLEXBOX ITEM IS ALSO A FLEXBOX CONTAINER IN ORDER TO ALIGN DAY NUMBER*/
 .window {
   width: 24%;
   height: 280px;
@@ -71,139 +77,23 @@ main {
   font-size: 5em;
 }
 
+/*CLOSED/DEFAULT WINDOW COLOR VARIANT 1*/
 .window-color-1 {
   background: red;
 }
 
+/*CLOSED/DEFAULT WINDOW COLOR VARIANT 2*/
 .window-color-2 {
   background: green;
 }
 
+/*CLOSED/DEFAULT WINDOW COLOR VARIANT 3*/
 .window-color-3 {
   background: purple;
 }
 
+/*DAY NUMBERS IN WINDOWS*/
 .window-text {
   font-family: 'Cubano Regular';
   font-size: 3em;
 }
-
-/*.window-01 {
-  width: 25%;
-  background: blue;
-}
-
-.window-02 {
-  width: 25%;
-  background: green;
-}
-
-.window-03 {
-  width: 50%;
-  background: yellow;
-}
-
-.window-04 {
-  width: 25%;
-  background: pink;
-}
-
-.window-05 {
-  width: 25%;
-  background: green;
-}
-
-.window-06 {
-  width: 50%;
-  background: yellow;
-}
-
-.window-07 {
-  width: 25%;
-  background: blue;
-}
-
-.window-08 {
-  width: 25%;
-  background: green;
-}
-
-.window-09 {
-  width: 50%;
-  background: yellow;
-}
-
-.window-10 {
-  width: 25%;
-  background: pink;
-}
-
-.window-11 {
-  width: 25%;
-  background: green;
-}
-
-.window-12 {
-  width: 50%;
-  background: yellow;
-}
-
-.window-13 {
-  width: 25%;
-  background: blue;
-}
-
-.window-14 {
-  width: 25%;
-  background: green;
-}
-
-.window-15 {
-  width: 50%;
-  background: yellow;
-}
-
-.window-16 {
-  width: 25%;
-  background: pink;
-}
-
-.window-17 {
-  width: 25%;
-  background: green;
-}
-
-.window-18 {
-  width: 50%;
-  background: yellow;
-}
-
-.window-19 {
-  width: 25%;
-  background: blue;
-}
-
-.window-20 {
-  width: 25%;
-  background: green;
-}
-
-.window-21 {
-  width: 50%;
-  background: yellow;
-}
-
-.window-22 {
-  width: 25%;
-  background: pink;
-}
-
-.window-23 {
-  width: 25%;
-  background: green;
-}
-
-.window-24 {
-  width: 50%;
-  background: yellow;
-}*/
