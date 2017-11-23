@@ -2,36 +2,114 @@
 @import '../style.css';
 
 html {
-  background: white;
-  color: black;
-}
-
-.recipe-09 {
-  margin: auto;
-  margin-top: 80px;
-  display: flex;
-  width: 90%;
-  background: #f8f8f8;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  background: pink;
 }
 
 .last-column {
   display: flex;
-  padding: 0 70px 0 60px;
+  justify-content: center;
+}
+
+.recipe-image {
+  text-align: center;
+}
+
+.recipe-amount {
+  width: 100%;
+  text-align: center;
+  height: 50px;
+}
+
+.recipe-ingredients {
+  width: 250px;
+  padding: 20px;
 }
 
 .recipe-instructions {
-  margin-left: 50px;
+  width: 400px;
+  padding: 20px;
 }
 
-.header {
+header {
+  width: 100%;
   text-align: center;
 }
 
 img {
-    object-fit: cover;
-    height: 300px;
-    width: 100%;
+    border-radius: 50%;
+    width: 40%;
+}
+
+p {
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+li {
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+hr {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: white;
+  border-style: solid;
+}
+
+h1 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-family: sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.recipe-byline {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.recipe-back-btn {
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  border: solid;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  border-width: medium;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
