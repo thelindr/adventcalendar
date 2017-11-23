@@ -80,7 +80,7 @@ main {
 /*NOTE: EACH FLEXBOX ITEM IS ALSO A FLEXBOX CONTAINER IN ORDER TO ALIGN DAY NUMBER*/
 .window {
   width: 23%;
-  height: 260px;
+  height: 250px;
   background: grey;
   margin: 0.6%;
   display: flex;
@@ -128,4 +128,21 @@ main {
   .window {
     width: 46%;
     height: 150px; }
+}
+
+/*TABLET MEDIA QUERY*/
+
+@media (min-width: 600px) and (max-width: 900px) {
+  body {
+    margin: 70px 60px 30px 60px; }
+  .adv-cal-startpage h1 {
+    font-size: 3.6em; }
+  .adv-cal-startpage h2 {
+    font-size:1.4em; }
+  .adv-cal-header {
+    height: 190px;
+    margin-bottom: 60px; }
+  .window {
+    width: 23%;
+    height: 170px; }
 }
