@@ -2,10 +2,37 @@
 @import '../style.css';
 
 html {
-  background: green;
-  background: url("../images/wood_1511438245989_3793_background.jpg");
+  background: #A1E3C3;
 }
 
+@font-face {
+    font-family: Cubano Regular;
+    src: url(./fonts/Cubano-Regular.otf);
+}
+
+h1 {
+  font-family: Cubano Regular, sans-serif;
+  margin-bottom: 0;
+}
+
+header p {
+  margin-top: 0;
+  font-size: 42px;
+}
+
+p, li {
+  font-size: 25px;
+  margin-top: 0;
+}
+
+p, h2, h3, li {
+  font-family: 'Clicker Script', cursive;
+}
+
+h2, h3 {
+  font-size: 42px;
+  margin: 0 auto 0 auto;
+}
 
 main {
   display: flex;
@@ -22,6 +49,7 @@ main {
 #chokladbollar {
   border-radius: 50%;
   border: #fff solid 2px;
+  justify-content: center;
 }
 /*
 .recipe-image {
