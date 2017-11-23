@@ -20,13 +20,18 @@ header p {
   font-size: 42px;
 }
 
-p {
+p, li {
   font-size: 25px;
+  margin-top: 0;
 }
 
 p, h2, h3, li {
   font-family: 'Clicker Script', cursive;
-  /*font-family: 'Fondamento', cursive;*/
+}
+
+h2, h3 {
+  font-size: 42px;
+  margin: 0 auto 0 auto;
 }
 
 main {
@@ -44,6 +49,7 @@ main {
 #chokladbollar {
   border-radius: 50%;
   border: #fff solid 2px;
+  justify-content: center;
 }
 /*
 .recipe-image {
