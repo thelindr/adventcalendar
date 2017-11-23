@@ -43,8 +43,10 @@ header {
 }
 
 img {
-    border-radius: 50%;
-    width: 40%;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 }
 
 p {
@@ -116,4 +118,26 @@ a {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+@media (max-width: 600px) {
+  img {
+    width: 300px;
+    height: 300px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    letter-spacing: 1px;
+  }
+  hr {
+    margin-top: 0;
+    width: 90%;
+  }
+  .last-column {
+    display: inline;
+  }
+  .recipe-ingredients {
+    padding-bottom: 0;
+  }
 }

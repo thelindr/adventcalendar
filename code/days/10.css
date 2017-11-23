@@ -119,3 +119,26 @@ a {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+@media (max-width: 600px) {
+  img {
+    width: 300px;
+    height: 300px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    letter-spacing: 1px;
+  }
+  hr {
+    margin-top: 0;
+    width: 90%;
+  }
+  .last-column {
+    display: inline;
+  }
+  .recipe-ingredients {
+    padding-bottom: 0;
+  }
+}
