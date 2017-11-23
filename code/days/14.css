@@ -3,21 +3,30 @@
 
 html {
   background: green;
-  background: url("../images/wood_1511438245989_3793_background.jpg");
+  background: url("../images/Trees_1920x1234_background.png");
 }
 
 
 main {
   display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
+.text-wrapper#day-14 {
+  width: 40%;
+  padding-left: 25px;
+
+}
+
+#chokladbollar {
+  border-radius: 50%;
+}
+/*
 .recipe-image {
-  /*justify-content: flex-start;*/
+  justify-content: flex-start;
 }
 
 .recipe-amount, .recipe-ingredients, .recipe-instructions, .recipe-tips {
 
-}
+}*/
