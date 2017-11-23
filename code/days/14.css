@@ -15,47 +15,61 @@ h1 {
   margin-bottom: 0;
 }
 
-header p {
-  margin-top: 0;
+h2, h3 {
+  font-family: 'Clicker Script', cursive;
   font-size: 42px;
+  margin: 10px auto 10px auto;
 }
 
-p, li {
-  font-size: 25px;
-  margin-top: 0;
-}
-
-p, h2, h3, li {
+header p {
+  margin-top: 10px;
+  font-size: 42px;
   font-family: 'Clicker Script', cursive;
 }
 
-h2, h3 {
-  font-size: 42px;
-  margin: 0 auto 0 auto;
+p, li, a {
+  font: 16px;
+  color: inherit;
+  margin: 5px 5px 5px 5px;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
 }
 
 main {
   display: flex;
+  flex-flow: wrap;
   justify-content: space-between;
   width: 100%;
+}
+
+
+#chokladbollar {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  justify-content: center;
 }
 
 .text-wrapper#day-14 {
   width: 40%;
   padding-left: 25px;
-
 }
 
-#chokladbollar {
-  border-radius: 50%;
-  border: #fff solid 2px;
-  justify-content: center;
-}
-/*
-.recipe-image {
-  justify-content: flex-start;
+.bottom-wrapper#day-14 {
+  width: 50%;
 }
 
-.recipe-amount, .recipe-ingredients, .recipe-instructions, .recipe-tips {
+.recipe-back-btn {
+  border: 2px solid #fff;
+  border-radius: 25px;
+  width: 25%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 20px 0 20px 0;
+  padding: 5px 5px 5px 5px;
+}
 
-}*/
+.recipe-back-btn:hover {
+  background-color: #77B292;
+  letter-spacing: 2px;
+}
