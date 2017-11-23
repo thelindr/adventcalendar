@@ -37,5 +37,12 @@ const checkCurrentTimeAndDay = (checkThisDay) => {
 }
 
 if (checkCurrentTimeAndDay(dayTEST)) {
-  document.getElementById("window-day-01").classList.toggle("window-is-open")
+  const windowElement = document.getElementById("window-day-01")
+  windowElement.classList.toggle("window-is-open")
+
+  // NOT IN USE: COMPLICATED WAY OF ADDING A LINK WRAPPER...
+  const linkElement = document.createElement("a");
+  linkElement.setAttribute("src", "./days/01.html");
+  windowElement.parentNode.insertBefore(linkElement, windowElement);
+  linkElement.appendChild(windowElement);
 }
