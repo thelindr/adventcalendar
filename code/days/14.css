@@ -21,6 +21,7 @@ main {
 
 #chokladbollar {
   border-radius: 50%;
+  border: #fff solid 2px;
 }
 /*
 .recipe-image {
