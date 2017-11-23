@@ -110,3 +110,22 @@ main {
   font-family: 'Cubano Regular';
   font-size: 3em;
 }
+
+/*MOBILE MEDIA QUERY*/
+
+@media (max-width: 600px) {
+  body {
+    margin: 70px 30px 30px 30px; }
+  .adv-cal-startpage {
+    background: #f8f8f8 url("./images/background-mobile-03.png") 0 0 / 100% auto no-repeat; }
+  .adv-cal-startpage h1 {
+    font-size: 2.3em; }
+  .adv-cal-startpage h2 {
+    font-size: 1em; }
+  .adv-cal-header {
+    height: 110px;
+    margin-bottom: 60px; }
+  .window {
+    width: 46%;
+    height: 150px; }
+}
