@@ -74,6 +74,7 @@ main {
 .adv-cal-flexbox {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 /*ALL CALENDAR FLEXBOX ITEMS*/
@@ -105,12 +106,6 @@ main {
   background: #77B292;
 }
 
-/*DAY NUMBERS IN WINDOWS*/
-.window-text {
-  font-family: 'Cubano Regular';
-  font-size: 3em;
-}
-
 /*MOBILE MEDIA QUERY*/
 
 @media (max-width: 600px) {
@@ -124,10 +119,11 @@ main {
     font-size: 1em; }
   .adv-cal-header {
     height: 110px;
-    margin-bottom: 60px; }
+    margin-bottom: 120px; }
   .window {
     width: 46%;
-    height: 150px; }
+    height: 150px;
+    font-size: 3em; }
 }
 
 /*TABLET MEDIA QUERY*/
@@ -144,5 +140,6 @@ main {
     margin-bottom: 60px; }
   .window {
     width: 23%;
-    height: 170px; }
+    height: 170px;
+    font-size: 3.5em; }
 }
