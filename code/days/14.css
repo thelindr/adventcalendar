@@ -11,19 +11,26 @@ html {
 }
 
 h1 {
+  font-size: 42px;
   font-family: Cubano Regular, sans-serif;
   margin-bottom: 0;
 }
 
 h2, h3 {
   font-family: 'Clicker Script', cursive;
-  font-size: 42px;
+  font-size: 32px;
   margin: 10px auto 10px auto;
+}
+
+header {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header p {
   margin-top: 10px;
-  font-size: 42px;
+  font-size: 32px;
   font-family: 'Clicker Script', cursive;
 }
 
@@ -42,7 +49,6 @@ main {
   width: 100%;
 }
 
-
 #chokladbollar {
   border-radius: 50%;
   border: 2px solid #fff;
@@ -51,7 +57,6 @@ main {
 
 .text-wrapper#day-14 {
   width: 40%;
-  padding-left: 25px;
 }
 
 .bottom-wrapper#day-14 {
@@ -72,4 +77,17 @@ main {
 .recipe-back-btn:hover {
   background-color: #77B292;
   letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  #chokladbollar, .text-wrapper#day-14, .bottom-wrapper#day-14 {
+    width: 100%;
+  }
+  header {
+    width: 150%;
+  }
+  .recipe-back-btn {
+    width: 50%;
+  }
+
 }
