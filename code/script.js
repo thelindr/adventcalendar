@@ -30,8 +30,8 @@ const day22 = new Date(2017,11,22)
 const day23 = new Date(2017,11,23)
 const day24 = new Date(2017,11,24)
 
-// FUNCTION: COMPARE CURRENT TIME WITH A DATE. IF CURRENT DATE >= DATE, THEN THIS FUNCTION RETURNS true
-// NOTE: AFTER 2017-12-31 THIS FUNCTION WILL ALWAYS RETURN false
+// FUNCTION: COMPARE CURRENT TIME WITH A SPECIFIC DATE. IF CURRENT DATE >= SPECIFIC DATE, THEN THIS FUNCTION RETURNS true
+// NOTE: AFTER 2017-12-31 THIS FUNCTION WILL ALWAYS RETURN false WHEN USED FOR THE 2017 ADVENT CALENDAR
 const checkCurrentTimeAndDay = (checkThisDay) => {
   return (currentTime.getFullYear() == checkThisDay.getFullYear() && currentTime.getMonth() == checkThisDay.getMonth() && currentTime.getDate() >= checkThisDay.getDate())
 }
