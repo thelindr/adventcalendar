@@ -3,14 +3,21 @@
 
 html {
   background: green;
-  background-image: url();
+  background: url("../images/wood_1511438245989_3793_background.jpg");
 }
 
 
 main {
   display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .recipe-image {
-  
+  /*justify-content: flex-start;*/
+}
+
+.recipe-amount, .recipe-ingredients, .recipe-instructions, .recipe-tips {
+
 }
