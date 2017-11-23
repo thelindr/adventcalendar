@@ -111,6 +111,7 @@ main {
 .window-is-open {
   background: #000000;
   position: relative;
+  cursor: pointer;
 }
 
 /*IF WINDOW IS OPEN*/
