@@ -3,4 +3,14 @@
 
 html {
   background: green;
+  background-image: url();
+}
+
+
+main {
+  display: flex;
+}
+
+.recipe-image {
+  
 }
