@@ -2,10 +2,32 @@
 @import '../style.css';
 
 html {
-  background: green;
-  background: url("../images/wood_1511438245989_3793_background.jpg");
+  background: #A1E3C3;
 }
 
+@font-face {
+    font-family: Cubano Regular;
+    src: url(./fonts/Cubano-Regular.otf);
+}
+
+h1 {
+  font-family: Cubano Regular, sans-serif;
+  margin-bottom: 0;
+}
+
+header p {
+  margin-top: 0;
+  font-size: 42px;
+}
+
+p {
+  font-size: 25px;
+}
+
+p, h2, h3, li {
+  font-family: 'Clicker Script', cursive;
+  /*font-family: 'Fondamento', cursive;*/
+}
 
 main {
   display: flex;
