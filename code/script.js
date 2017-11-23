@@ -1,4 +1,4 @@
-// THIS DATE OBJECT CAN BE SET TO CURRENT DATE AND USED IN CODE BELOW FOR TEST PURPOSES
+// USE FOR TEST: THIS DATE OBJECT CAN BE SET TO CURRENT DATE AND USED IN CODE BELOW FOR TEST PURPOSES
 const dayTEST = new Date(2017,10,23)
 
 // DATE OBJECT FOR CURRENT TIME
@@ -36,6 +36,7 @@ const checkCurrentTimeAndDay = (checkThisDay) => {
   return (currentTime.getFullYear() == checkThisDay.getFullYear() && currentTime.getMonth() == checkThisDay.getMonth() && currentTime.getDate() >= checkThisDay.getDate())
 }
 
+// USE FOR TEST: APPLIED TO WINDOW FOR DAY 1
 if (checkCurrentTimeAndDay(dayTEST)) {
   const windowElement = document.getElementById("window-day-01")
   windowElement.classList.toggle("window-is-open")
