@@ -90,6 +90,11 @@ main {
   font-size: 5em;
 }
 
+.window:hover {
+  margin-top: 1px;
+  position: relative;
+}
+
 /*CLOSED/DEFAULT WINDOW COLOR VARIANT 1*/
 .window-color-1 {
   background: #A1E3C3;
