@@ -3,157 +3,108 @@
 @import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Open+Sans");
 
 html {
-  background: #ff7575;
+  background: #A15F81;
 }
 
-body {
-  margin-top: 40px;
+@font-face {
+    font-family: Cubano Regular;
+    src: url(./fonts/Cubano-Regular.otf);
 }
 
-.last-column {
-  display: flex;
-  justify-content: left;
+h1 {
+  font-size: 42px;
+  font-family: Cubano Regular, sans-serif;
+  margin-bottom: 0;
 }
 
-.recipe-image {
-  margin-top: 5%;
-  text-align: left;
-  padding-bottom: 20px;
-}
-
-.recipe-amount {
-  width: 100%;
-  text-align: left;
-  height: 60px;
-  margin-top: 30px;
-}
-
-.recipe-ingredients {
-  width: 250px;
-  padding: 10px 20px 20px 20px;
-}
-
-.recipe-instructions {
-  width: 400px;
-  padding: 10px 20px 20px 20px;
+h2, h3 {
+  font-family: 'Clicker Script', cursive;
+  font-size: 32px;
+  margin: 10px auto 10px auto;
 }
 
 header {
   width: 100%;
-  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
-img {
-  border-radius: 50%;
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
+header p {
+  margin-top: 10px;
+  font-size: 32px;
+  font-family: 'Clicker Script', cursive;
 }
 
-p {
-  font-family: sans-serif;
-  font-weight: 200;
-  font-size: 15px;
-  margin-top: 0;
+p, li, a {
+  font: 16px;
+  color: inherit;
+  margin: 5px 5px 5px 5px;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
 }
 
-li {
-  font-family: sans-serif;
-  font-weight: 200;
-  font-size: 15px;
-}
 
-hr {
-  width: 60%;
-  margin: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  color: white;
-  border-style: solid;
-}
-
-h1 {
-  font-family: Cubano Regular;
-  font-weight: 200;
-  font-size: 45px;
-  margin: 0;
-}
-
-h2 {
-  font-family: sans-serif;
-  font-weight: 200;
-  letter-spacing: 2px;
-  font-size: 15px;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-}
-
-h3 {
-  font-family: sans-serif;
-  font-weight: 200;
-  font-size: 15px;
-  font-style: italic;
-  margin: 0;
-}
-
-.recipe-byline {
+main {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
   width: 100%;
-  text-align: left;
-  height: 50px;
+}
+
+#hallongrotta {
+  border-radius: 50%;
+  width: 50%;
+  border: 2px solid #fff;
+  justify-content: center;
+  align-self: stretch;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+}
+
+.text-wrapper-top#day-19 {
+  width: 40%;
+}
+
+.bottom-wrapper-middle#day-19 {
+  width: 50%;
 }
 
 .recipe-back-btn {
-  width: 100%;
-  text-align: left;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  width: 25%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 20px 0 20px 0;
+  padding: 5px 5px 5px 5px;
 }
 
-a {
-  border: solid;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  border-width: medium;
-  border-radius: 20px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  text-transform: uppercase;
+.recipe-back-btn:hover {
+  background-color: #9b7d8d;
   letter-spacing: 2px;
 }
+
 @media (max-width: 600px) {
-
-body {
-  width: 100%;
-  margin: 5%;
-}
-  .recipe-image {
+  #hallongrotta, .text-wrapper-top#day-19, .text-wrapper-middle#day-19, .bottom-wrapper#day-19 {
     width: 100%;
-    margin-top: 10%;
-    padding-bottom: 5%;
   }
+  header {
+    width: 100%;
+  }
+  .recipe-back-btn {
+    width: 50%;
+  }
+}
 
-  img {
-    width: 300px;
-    height: 300px;
+@media (min-width: 600px) and (max-width: 900px) {
+  header {
+    width: 100%;
   }
-  h1 {
-    font-size: 40px;
-  }
-  h2 {
-    letter-spacing: 1px;
-  }
-  hr {
-    margin-top: 0;
-    width: 90%;
-  }
-  .recipe-instructions {
+  .recipe-image #hallongrotta {
     width: 80%;
-    padding: 10px 20px 20px 20px;
-  }
-  .last-column {
-    display: inline;
-  }
-  .recipe-ingredients {
-    padding-bottom: 0;
   }
 }

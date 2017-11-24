@@ -90,6 +90,11 @@ main {
   font-size: 5em;
 }
 
+.window:hover {
+  margin-top: 1px;
+  position: relative;
+}
+
 /*CLOSED/DEFAULT WINDOW COLOR VARIANT 1*/
 .window-color-1 {
   background: #A1E3C3;
@@ -145,136 +150,137 @@ main {
 
 /*IF WINDOW FOR DAY 03 IS OPEN*/
 #window-day-03.window-is-open::after {
-  background-image: url(".images/saffranssockerkaka.jpg");
+  background-image: url("./images/saffranssockerkaka.jpg");
   content: "3";
 }
-/*MOBILE MEDIA QUERY*/
 
 /*IF WINDOW FOR DAY 04 IS OPEN*/
 #window-day-04.window-is-open::after {
-  background-image: url(".images/mjolkchockladbrack.jpg");
+  background-image: url("./images/mjolkchockladbrack.jpg");
   content: "4";
 }
 
 /*IF WINDOW FOR DAY 05 IS OPEN*/
 #window-day-05.window-is-open::after {
-  background-image: url(".images/pepparkakspaj.jpg");
+  background-image: url("./images/pepparkakspaj.jpg");
   content: "5";
 }
 
 /*IF WINDOW FOR DAY 06 IS OPEN*/
 #window-day-06.window-is-open::after {
-  background-image: url(".images/kardemummakolor.jpg");
+  background-image: url("./images/kardemummakolor.jpg");
   content: "6";
 }
 
 /*IF WINDOW FOR DAY 07 IS OPEN*/
 #window-day-07.window-is-open::after {
-  background-image: url(".images/pepparkakskolor.jpg");
+  background-image: url("./images/pepparkakskolor.jpg");
   content: "7";
 }
 
 /*IF WINDOW FOR DAY 08 IS OPEN*/
 #window-day-08.window-is-open::after {
-  background-image: url(".images/christmastreebrownies.jpg");
+  background-image: url("./images/christmastreebrownies.jpg");
   content: "8";
 }
 
 /*IF WINDOW FOR DAY 09 IS OPEN*/
 #window-day-09.window-is-open::after {
-  background-image: url(".images/saffransbiscotti.jpg");
+  background-image: url("./images/saffransbiscotti.jpg");
   content: "9";
 }
 
 /*IF WINDOW FOR DAY 10 IS OPEN*/
 #window-day-10.window-is-open::after {
-  background-image: url(".images/saffranskladdkaka.jpg");
+  background-image: url("./images/saffranskladdkaka.jpg");
   content: "10";
 }
 
 /*IF WINDOW FOR DAY 11 IS OPEN*/
 #window-day-11.window-is-open::after {
-  background-image: url(".images/chokladkokosrutor.jpg");
+  background-image: url("./images/chokladkokosrutor.jpg");
   content: "11";
 }
 
 /*IF WINDOW FOR DAY 12 IS OPEN*/
 #window-day-12.window-is-open::after {
-  background-image: url(".images/havreflarn.jpg");
+  background-image: url("./images/havreflarn.jpg");
   content: "12";
 }
 
 /*IF WINDOW FOR DAY 13 IS OPEN*/
 #window-day-13.window-is-open::after {
-  background-image: url(".images/kanelbullerulltarta.jpg");
+  background-image: url("./images/kanelbullerulltarta.jpg");
   content: "13";
 }
 
 /*IF WINDOW FOR DAY 14 IS OPEN*/
 #window-day-14.window-is-open::after {
-  background-image: url(".images/chockladbullar.jpg");
+  background-image: url("./images/chockladbullar.jpg");
   content: "14";
 }
 
 /*IF WINDOW FOR DAY 15 IS OPEN*/
 #window-day-15.window-is-open::after {
-  background-image: url(".images/bananmuffin.jpg");
+  background-image: url("./images/bananmuffin.jpg");
   content: "15";
 }
 
 /*IF WINDOW FOR DAY 16 IS OPEN*/
 #window-day-16.window-is-open::after {
-  background-image: url(".images/dumlekladdkaka.jpg");
+  background-image: url("./images/dumlekladdkaka.jpg");
   content: "16";
 }
 
 /*IF WINDOW FOR DAY 17 IS OPEN*/
 #window-day-17.window-is-open::after {
-  background-image: url(".images/banankaka.jpg");
+  background-image: url("./images/banankaka.jpg");
   content: "17";
 }
 
 /*IF WINDOW FOR DAY 18 IS OPEN*/
 #window-day-18.window-is-open::after {
-  background-image: url(".images/kanelbullemuffin.jpg");
+  background-image: url("./images/kanelbullemuffin.jpg");
   content: "18";
 }
 
 /*IF WINDOW FOR DAY 19 IS OPEN*/
 #window-day-19.window-is-open::after {
-  background-image: url(".images/hallongrotta.jpg");
+  background-image: url("./images/hallongrotta.jpg");
   content: "19";
 }
 
 /*IF WINDOW FOR DAY 20 IS OPEN*/
 #window-day-20.window-is-open::after {
-  background-image: url(".images/partytarta.jpg");
+  background-image: url("./images/partytarta.jpg");
   content: "20";
 }
 
 /*IF WINDOW FOR DAY 21 IS OPEN*/
 #window-day-21.window-is-open::after {
-  background-image: url(".images/rabarberpaj.jpg");
+  background-image: url("./images/rabarberpaj.jpg");
   content: "21";
 }
 
 /*IF WINDOW FOR DAY 22 IS OPEN*/
 #window-day-22.window-is-open::after {
-  background-image: url(".images/karamellappelkaka.jpg");
+  background-image: url("./images/karamellappelkaka.jpg");
   content: "22";
 }
 
 /*IF WINDOW FOR DAY 23 IS OPEN*/
 #window-day-23.window-is-open::after {
-  background-image: url(".images/semla.jpg");
+  background-image: url("./images/semla.jpg");
   content: "23";
 }
 
 /*IF WINDOW FOR DAY 24 IS OPEN*/
 #window-day-24.window-is-open::after {
-  background-image: url(".images/citroncheesecake.jpg");
+  background-image: url("./images/citroncheesecake.jpg");
   content: "24";
 }
+
+/*MOBILE MEDIA QUERY*/
 @media (max-width: 600px) {
   body {
     margin: 70px 30px 30px 30px; }
