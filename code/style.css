@@ -110,6 +110,7 @@ main {
   background: #77B292;
 }
 
+/*IF WINDOW IS OPENABLE*/
 .window-is-openable {
   cursor: pointer;
 }
