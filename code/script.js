@@ -27,15 +27,18 @@ const days = [
   new Date(2017,11,22),
   new Date(2017,11,23),
   new Date(2017,11,24),
-  new Date(2017,10,23) // ONLY USE FOR TEST: THIS DATE OBJECT CAN BE SET TO ANY DATE AND USED IN CODE BELOW FOR TEST PURPOSES
+  new Date(2017,10,24) // ONLY USE FOR TEST: THIS DATE OBJECT CAN BE SET TO ANY DATE AND USED IN CODE BELOW FOR TEST PURPOSES
 ]
 
-// FUNCTION: COMPARE CURRENT TIME WITH A SPECIFIC DATE. IF CURRENT DATE >= SPECIFIC DATE, THEN THIS FUNCTION RETURNS true
-// NOTE: AFTER 2017-12-31 THIS FUNCTION WILL ALWAYS RETURN false WHEN USED FOR THE 2017 ADVENT CALENDAR
+// FUNCTION: COMPARE CURRENT TIME WITH A SPECIFIC DATE
+// IF CURRENT DATE > SPECIFIC DATE, THEN THIS FUNCTION RETURNS 2
+// ELSE IF CURRENT DATE == SPECIFIC DATE, THEN THIS FUNCTION RETURNS 1
+// ELSE THIS FUNCTION RETURNS 0
+// NOTE: AFTER 2017-12-31 THIS FUNCTION WILL ALWAYS RETURN 0 WHEN USED FOR THE 2017 ADVENT CALENDAR
 const checkCurrentTimeAndDay = (checkThisDay) => {
   if (currentTime.getFullYear() == checkThisDay.getFullYear() && // IF YEAR FROM CURRENT TIME IS EQUAL TO YEAR FROM SPECIFIC DATE
       currentTime.getMonth() == checkThisDay.getMonth() && // AND IF MONTH FROM CURRENT TIME IS EQUAL TO YEAR FROM SPECIFIC DATE
-      currentTime.getDate() > checkThisDay.getDate()) { // AND IF DAY FROM CURRENT TIME IS MORE THAN TO DAY FROM SPECIFIC DATE
+      currentTime.getDate() > checkThisDay.getDate()) { // AND IF DAY FROM CURRENT TIME IS MORE THAN DAY FROM SPECIFIC DATE
         return 2
       } else if (currentTime.getFullYear() == checkThisDay.getFullYear() && // IF YEAR FROM CURRENT TIME IS EQUAL TO YEAR FROM SPECIFIC DATE
                  currentTime.getMonth() == checkThisDay.getMonth() && // AND IF MONTH FROM CURRENT TIME IS EQUAL TO YEAR FROM SPECIFIC DATE
@@ -59,7 +62,14 @@ const checkCurrentTimeAndDay = (checkThisDay) => {
 //       }
 //     } else if (checkCurrentTimeAndDay(day) == 1) {
 //         const windowElement = document.getElementById(`window-day-${dayString}`)
-//         windowElement.classList.toggle("window-is-test")
+//         windowElement.classList.toggle("window-is-openable")
+//         windowElement.onclick = () => {
+//           windowElement.classList.remove("window-is-openable")
+//           windowElement.classList.add("window-is-open")
+//           windowElement.onclick = () => {
+//             window.location.href = "./days/01.html"
+//           }
+//         }
 //       }
 //   })
 // }
@@ -76,5 +86,12 @@ if (checkCurrentTimeAndDay(days[24]) == 2) {
   }
 } else if (checkCurrentTimeAndDay(days[24]) == 1) {
     const windowElement = document.getElementById("window-day-01")
-    windowElement.classList.toggle("window-is-test")
+    windowElement.classList.toggle("window-is-openable")
+    windowElement.onclick = () => {
+      windowElement.classList.remove("window-is-openable")
+      windowElement.classList.add("window-is-open")
+      windowElement.onclick = () => {
+        window.location.href = "./days/01.html"
+      }
+    }
   }
