@@ -1,6 +1,159 @@
 /*IMPORT OF BASIC CSS*/
 @import '../style.css';
+@import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Open+Sans");
 
 html {
-  background: green;
+  background: #52691c7d;
+}
+
+body {
+  margin-top: 40px;
+}
+
+.last-column {
+  display: flex;
+  justify-content: left;
+}
+
+.recipe-image {
+  margin-top: 5%;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.recipe-amount {
+  width: 100%;
+  text-align: left;
+  height: 60px;
+  margin-top: 30px;
+}
+
+.recipe-ingredients {
+  width: 250px;
+  padding: 10px 20px 20px 20px;
+}
+
+.recipe-instructions {
+  width: 400px;
+  padding: 10px 20px 20px 20px;
+}
+
+header {
+  width: 100%;
+  text-align: left;
+}
+
+img {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+p {
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  margin-top: 0;
+}
+
+li {
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+hr {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: white;
+  border-style: solid;
+}
+
+h1 {
+  font-family: Cubano Regular;
+  font-weight: 200;
+  font-size: 45px;
+  margin: 0;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-family: sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  font-style: italic;
+  margin: 0;
+}
+
+.recipe-byline {
+  width: 100%;
+  text-align: left;
+  height: 50px;
+}
+
+.recipe-back-btn {
+  width: 100%;
+  text-align: left;
+}
+
+a {
+  border: solid;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  border-width: medium;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@media (max-width: 600px) {
+
+body {
+  width: 100%;
+  margin: 5%;
+}
+  .recipe-image {
+    width: 100%;
+    margin-top: 10%;
+    padding-bottom: 5%;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    letter-spacing: 1px;
+  }
+  hr {
+    margin-top: 0;
+    width: 90%;
+  }
+  .recipe-instructions {
+    width: 80%;
+    padding: 10px 20px 20px 20px;
+  }
+  .last-column {
+    display: inline;
+  }
+  .recipe-ingredients {
+    padding-bottom: 0;
+  }
 }
