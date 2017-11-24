@@ -2,5 +2,108 @@
 @import '../style.css';
 
 html {
-  background: blue;
+  background: #FFC800;
+}
+
+@font-face {
+    font-family: Cubano Regular;
+    src: url(./fonts/Cubano-Regular.otf);
+}
+
+h1 {
+  font-size: 42px;
+  font-family: Cubano Regular, sans-serif;
+  margin-bottom: 0;
+}
+
+h2, h3 {
+  font-family: 'Clicker Script', cursive;
+  font-size: 32px;
+  margin: 10px auto 10px auto;
+}
+
+header {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 32px;
+  font-family: 'Clicker Script', cursive;
+}
+
+p, li, a {
+  font: 16px;
+  color: inherit;
+  margin: 5px 5px 5px 5px;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+main {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#bananamuffin {
+  border-radius: 50%;
+  width: 80%;
+  border: 2px solid #fff;
+  justify-content: center;
+  align-self: stretch;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+}
+
+.text-wrapper#day-15 {
+  width: 40%;
+}
+
+.bottom-wrapper#day-15 {
+  width: 50%;
+}
+
+.recipe-back-btn {
+  border: 2px solid #fff;
+  border-radius: 25px;
+  width: 25%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 20px 0 20px 0;
+  padding: 5px 5px 5px 5px;
+}
+
+.recipe-back-btn:hover {
+  background-color: #FCE3A9;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  #bananmuffin, .text-wrapper#day-15, .bottom-wrapper#day-15 {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  .recipe-back-btn {
+    width: 50%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  header {
+    width: 100%;
+  }
+  .recipe-image #bananmuffin {
+    width: 80%;
+  }
 }

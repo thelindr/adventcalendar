@@ -2,7 +2,7 @@
 @import '../style.css';
 
 html {
-  background: #A1E3C3;
+  background: #77B292;
 }
 
 @font-face {
@@ -56,6 +56,10 @@ main {
   border: 2px solid #fff;
   justify-content: center;
   align-self: stretch;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
 }
 
 .text-wrapper#day-14 {
@@ -78,7 +82,7 @@ main {
 }
 
 .recipe-back-btn:hover {
-  background-color: #77B292;
+  background-color: #A1E3C3;
   letter-spacing: 2px;
 }
 
