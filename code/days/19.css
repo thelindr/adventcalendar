@@ -2,7 +2,7 @@
 @import '../style.css';
 
 html {
-  background: #FF9999;
+  background: #A15F81;
 }
 
 @font-face {
@@ -83,7 +83,7 @@ main {
 }
 
 .recipe-back-btn:hover {
-  background-color: #e8c9c9;
+  background-color: #9b7d8d;
   letter-spacing: 2px;
 }
 
