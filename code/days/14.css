@@ -26,6 +26,7 @@ header {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 header p {
@@ -51,8 +52,10 @@ main {
 
 #chokladbollar {
   border-radius: 50%;
+  width: 80%;
   border: 2px solid #fff;
   justify-content: center;
+  align-self: stretch;
 }
 
 .text-wrapper#day-14 {
@@ -84,10 +87,18 @@ main {
     width: 100%;
   }
   header {
-    width: 150%;
+    width: 100%;
   }
   .recipe-back-btn {
     width: 50%;
   }
+}
 
+@media (min-width: 600px) and (max-width: 900px) {
+  header {
+    width: 100%;
+  }
+  .recipe-image #chokladbollar {
+    width: 80%;
+  }
 }
