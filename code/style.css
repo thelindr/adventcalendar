@@ -110,6 +110,10 @@ main {
   background: #77B292;
 }
 
+.window-is-openable {
+  cursor: pointer;
+}
+
 /*IF WINDOW IS OPEN*/
 /*NOTE: BACKGROUND COLOR SET TO #000000*/
 /*NOTE: POSITION SET TO RELATIVE*/
