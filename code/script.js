@@ -27,13 +27,15 @@ const days = [
   new Date(2017,11,22),
   new Date(2017,11,23),
   new Date(2017,11,24),
-  new Date(2017,10,23) // ONLY USE FOR TEST: THIS DATE OBJECT CAN BE SET TO ANY DATE AND USED IN CODE BELOW FOR TEST PURPOSES
+  new Date(2017,10,24) // ONLY USE FOR TEST: THIS DATE OBJECT CAN BE SET TO ANY DATE AND USED IN CODE BELOW FOR TEST PURPOSES
 ]
 
 // FUNCTION: COMPARE CURRENT TIME WITH A SPECIFIC DATE. IF CURRENT DATE >= SPECIFIC DATE, THEN THIS FUNCTION RETURNS true
 // NOTE: AFTER 2017-12-31 THIS FUNCTION WILL ALWAYS RETURN false WHEN USED FOR THE 2017 ADVENT CALENDAR
 const checkCurrentTimeAndDay = (checkThisDay) => {
-  return (currentTime.getFullYear() == checkThisDay.getFullYear() && currentTime.getMonth() == checkThisDay.getMonth() && currentTime.getDate() >= checkThisDay.getDate())
+  return (currentTime.getFullYear() == checkThisDay.getFullYear() && // IF YEAR FROM CURRENT TIME IS EQUAL TO YEAR FROM SPECIFIC DATE
+   currentTime.getMonth() == checkThisDay.getMonth() && // AND IF MONTH FROM CURRENT TIME IS EQUAL TO YEAR FROM SPECIFIC DATE
+   currentTime.getDate() >= checkThisDay.getDate()) // AND IF DAY FROM CURRENT TIME IS MORE THAN OR EQUAL TO DAY FROM SPECIFIC DATE
 }
 
 // FUNCTION: CHECK ALL DAYS---WILL ONLY WORK WHEN CURRENT TIME IS 1--31 DEC
@@ -41,7 +43,6 @@ const checkCurrentTimeAndDay = (checkThisDay) => {
 //   days.forEach((day, index) => {
 //     actualDay = index + 1
 //     dayString = (actualDay < 10 ? "0" + actualDay : actualDay)
-//     console.log(dayString)
 //     if (checkCurrentTimeAndDay(day)) {
 //       const windowElement = document.getElementById(`window-day-${dayString}`)
 //       windowElement.classList.toggle("window-is-open")
