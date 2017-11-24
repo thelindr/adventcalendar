@@ -1,5 +1,6 @@
 /*IMPORT OF BASIC CSS*/
 @import '../style.css';
+@import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Open+Sans");
 
 html {
   background: #A15F81;
