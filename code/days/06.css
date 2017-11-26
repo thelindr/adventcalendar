@@ -2,5 +2,106 @@
 @import '../style.css';
 
 html {
-  background: green;
+  background: #bfa780;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+.top-area-content h2 {
+  font-family: Cubano Regular;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.top-area-content h2 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.top-area-content p {
+  font-size: 1.2em;
+}
+
+.top-area-container {
+  position: relative;
+  height: 450px;
+  background: #bfa780 url("../images/kardemummakolor.jpg") center center / cover no-repeat;
+}
+
+.top-area-content {
+  position: absolute;
+  left: 100px;
+  bottom: 55px;
+  width: 675px;
+  padding: 15px 37px 17px 37px;
+  background: #9a8a6f8a;
+}
+
+main {
+  margin: 90px 275px 100px 275px;
+}
+
+main h2 {
+  font-size: 1.6em;
+}
+
+.recipe-flexbox {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.recipe-flexitem {
+  border-left: 2px solid #f8f8f8;
+  padding-left: 25px;
+}
+
+.recipe-flexitem h2 {
+  margin-top: 2px;
+}
+
+ul,
+ol {
+  line-height: 1.6em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+.recipe-flexitem ul,
+.recipe-flexitem ol {
+  margin-bottom: 8px;
+}
+
+.recipe-flexitem-left {
+  width: 36%;
+  margin-right: 4%;
+}
+
+.recipe-flexitem-right {
+  margin-left: 4%;
+  width: 56%;
+}
+
+.recipe-byline {
+  font-style: italic;
+}
+
+.recipe-back-btn-container {
+  padding: 50px 0;
+}
+
+.recipe-back-btn {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.05em;
+  border: 3px solid #ffffffba;
+  border-radius: 50px;
+  padding: 17px 37px;
 }
