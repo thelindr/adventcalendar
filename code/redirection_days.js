@@ -7,6 +7,7 @@ const redirectionCheck = () => {
   const secondCharInDate = window.location.href.charAt(indexOfSecondCharInDate)
   const dateInURL = `${firstCharInDate}${secondCharInDate}`
   // IF CURRENT DATE < 2017-12-DD (2017-11-DD), THEN REDIRECT USER TO INDEX PAGE
+  // NOTE: AFTER 2017-12-31 THIS WILL ALWAYS BE TRUE AND REDIRECT WILL ALWAYS OCCUR
   if (checkCurrentTimeAndDay(new Date(2017,11,dateInURL)) == 0) {
     window.location.href = "../index.html"
     }
