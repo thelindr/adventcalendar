@@ -53,7 +53,7 @@ main {
 
 #kanelbullemuffin {
   border-radius: 50%;
-  width: 50%;
+  width: 80%;
   border: 2px solid #fff;
   justify-content: center;
   align-self: stretch;
@@ -68,11 +68,11 @@ main {
 }
 
 .text-wrapper-middle#day-18 {
-  width: 100%;
+  width: 60%;
 }
 
 .bottom-wrapper#day-18 {
-  width: 50%;
+  width: 60%;
 }
 
 .recipe-back-btn {
@@ -109,5 +109,8 @@ main {
   }
   .recipe-image #kanelbullemuffin {
     width: 80%;
+  }
+  .recipe-back-btn {
+    width: 50%;
   }
 }

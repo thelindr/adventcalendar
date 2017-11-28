@@ -106,4 +106,7 @@ main {
   .recipe-image #dumlekladdkaka {
     width: 80%;
   }
+  .recipe-back-btn {
+    width: 50%;
+  }
 }

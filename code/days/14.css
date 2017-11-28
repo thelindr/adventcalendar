@@ -59,7 +59,6 @@ main {
   object-fit: cover;
   border-radius: 50%;
   width: 500px;
-  height: 500px;
 }
 
 .text-wrapper#day-14 {
@@ -105,4 +104,8 @@ main {
   .recipe-image #chokladbollar {
     width: 80%;
   }
+  .recipe-back-btn {
+    width: 50%;
+  }
+
 }
