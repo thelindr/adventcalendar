@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Open+Sans");
 
 html {
-  background: #A15F81;
+  background: #58c8c4;
 }
 
 @font-face {
@@ -61,7 +61,7 @@ main {
   object-fit: cover;
   border-radius: 50%;
   width: 500px;
-  height: 500px;
+  /*height: 500px;*/
 }
 
 .text-wrapper-top#day-19 {
@@ -69,13 +69,13 @@ main {
 }
 
 .bottom-wrapper-middle#day-19 {
-  width: 50%;
+  width: 60%;
 }
 
 .recipe-back-btn {
   border: 2px solid #fff;
   border-radius: 25px;
-  width: 25%;
+  width: 75%;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -106,5 +106,8 @@ main {
   }
   .recipe-image #hallongrotta {
     width: 80%;
+  }
+  .recipe-back-btn {
+    width: 75%;
   }
 }
