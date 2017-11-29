@@ -73,7 +73,6 @@ img {
 }
 
 p {
-  font-family: sans-serif;
   font-weight: 200;
   font-size: 15px;
   margin-top: 0;
@@ -101,10 +100,17 @@ h1 {
   margin: 0;
 }
 
+h4 {
+  font-family: 'Marck Script', cursive;
+  color: #c11919;
+  font-size: 30px;
+  letter-spacing: 1%;
+}
+
 #snow {
 	background: none;
 	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
-	height: 80%;
+	height: 90%;
 	left: 0;
 	position: absolute;
 	top: 0;
@@ -181,7 +187,7 @@ a {
 @media (max-width: 600px) {
 
 #snow {
-  height: 85%;
+  height: 100%;
 }
 
 body {
