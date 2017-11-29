@@ -7,10 +7,23 @@
     <!-- NOTE: FONTS ARE IMPORTED IN CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
+
   <body>
 
     <!-- START OF HEADER -->
     <header class="adv-cal-header">
+
+        <!-- SNOW ANIMATION -->
+
+      <div class="snow-container">
+        <div class="snow foreground"></div>
+        <div class="snow foreground layered"></div>
+        <div class="snow middleground"></div>
+        <div class="snow middleground layered"></div>
+        <div class="snow background"></div>
+        <div class="snow background layered"></div>
+      </div>
+
       <div class="adv-cal-header-overlay">
         <h2>Company 1 presents</h2>
         <h1>Adventskalendern</h1>
@@ -24,6 +37,7 @@
 
       <!-- START OF ADVENT CALENDAR CONTAINER/FLEXBOX -->
       <div class="adv-cal-flexbox">
+
 
         <!-- WINDOW DAY 05 -->
         <div class="window window-color-1" id="window-day-05">
@@ -154,5 +168,9 @@
     <script src="./script.js" charset="utf-8"></script>
     <script src="./indexpage.js" charset="utf-8"></script>
 
+    <audio autoplay controls>
+      <source src="./music/silent-night-disco.mp3" type="audio/ogg">
+
+    </audio>
   </body>
 </html>
