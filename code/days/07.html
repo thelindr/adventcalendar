@@ -9,41 +9,42 @@
   <body>
 
     <!-- START OF HEADER -->
-    <header>
-      <h1>Day 7: Pepparkakskolor</h1>
-      <p>Om du inte prövat kola med pepparkakssmak är det god tid nu. Pepparkakskola går snabbt att laga – under 45 minuter. Du följer den klassiska julkolans recept och adderar bara 2 tsk pepparkakskryddor. Smaskens.</p>
-    </header>
+    <div class="top-area-container">
+      <div class="top-area-content">
+        <h2>Day 7:</h2>
+        <h1>Pepparkakskolor</h1>
+        <p>Om du inte prövat kola med pepparkakssmak är det god tid nu. Pepparkakskola går snabbt att laga – under 45 minuter. Du följer den klassiska julkolans recept och adderar bara 2 tsk pepparkakskryddor. Smaskens.</p>
+      </div>
+    </div>
     <!-- END OF HEADER -->
 
     <!-- START OF MAIN CONTENT -->
     <main>
 
-      <div class="recipe-image">
-          <img src="../images/pepparkakskolor.jpg" alt="Pepparkakskolor">
+      <div class="recipe-flexbox">
+
+        <div class="recipe-ingredients recipe-flexitem recipe-flexitem-left">
+          <h2>Du behöver:</h2>
+          <ul>
+            <li>100 g smör</li>
+            <li>3 dl strösocker</li>
+            <li>2 dl vispgrädde</li>
+            <li>1 dl ljus sirap</li>
+            <li>1 msk vaniljsocker</li>
+            <li>2 tsk pepparkakskryddor</li>
+          </ul>
+        </div>
+
+        <div class="recipe-instructions recipe-flexitem recipe-flexitem-right">
+          <h2>Gör så här:</h2>
+            <ol>
+            <li>Smält smöret i en tjockbottnad kastrull.</li>
+            <li>Tillsätt övriga ingredienser. Koka upp och koka utan lock tills smeten klarar kulprovet eller tills temperaturen är ca 125°C, rör om då och då. Koktiden varierar beroende på hur vid kastrullen är.</li>
+            <li>Lägg ett bakplåtspapper i en liten långpanna ca 20x30 cm. Häll smeten i pannan. Låt kolan stelna något. Skär eller klipp den i bitar.</li>
+          </ol>
+        </div>
+
       </div>
-
-
-      <div class="recipe-ingredients">
-        <h2>Du behöver:</h2>
-        <ul>
-          <li>100 g smör</li>
-          <li>3 dl strösocker</li>
-          <li>2 dl vispgrädde</li>
-          <li>1 dl ljus sirap</li>
-          <li>1 msk vaniljsocker</li>
-          <li>2 tsk pepparkakskryddor</li>
-        </ul>
-      </div>
-
-      <div class="recipe-instructions">
-        <h2>Gör så här:</h2>
-          <ol>
-          <li>Smält smöret i en tjockbottnad kastrull.</li>
-          <li>Tillsätt övriga ingredienser. Koka upp och koka utan lock tills smeten klarar kulprovet eller tills temperaturen är ca 125°C, rör om då och då. Koktiden varierar beroende på hur vid kastrullen är.</li>
-          <li>Lägg ett bakplåtspapper i en liten långpanna ca 20x30 cm. Häll smeten i pannan. Låt kolan stelna något. Skär eller klipp den i bitar.</li>
-        </ol>
-      </div>
-
 
       <div class="recipe-tips">
         <h3>Tips:</h3>
@@ -54,12 +55,15 @@
         <p>Provlagat av: Fredrik</p>
       </div>
 
-      <div class="recipe-back-btn">
-        <p><a href="../index.html">Tillbaka</a></p>
+      <div class="recipe-back-btn-container">
+        <a class="recipe-back-btn" href="../index.html">Tillbaka</a>
       </div>
 
     </main>
     <!-- END OF MAIN CONTENT -->
+
+    <script src="../script.js" charset="utf-8"></script>
+    <!-- <script src="../redirection_days.js" charset="utf-8"></script> -->
 
   </body>
 </html>
