@@ -4,10 +4,30 @@
 
 html {
   background: #6b8096;
+  animation: fadein 2s;
+    @keyframes fadein {
+        from {
+            opacity:0;
+          }
+          to {
+            opacity:1;
+          }
+        }
+      }
+  @-webkit-keyframes fadein { /* Safari and Chrome */
+      from {
+          opacity:0;
+      }
+      to {
+         opacity:1;
+       }
+     }
+   }
 }
 
 body {
   margin-top: 40px;
+  height: auto;
 }
 
 .last-column {
@@ -48,6 +68,8 @@ img {
   width: 400px;
   height: 400px;
   object-fit: cover;
+  border-style: solid;
+  border-width: thin;
 }
 
 p {
@@ -77,6 +99,42 @@ h1 {
   font-weight: 200;
   font-size: 45px;
   margin: 0;
+}
+
+#snow {
+	background: none;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 80%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
 
 h2 {
@@ -121,6 +179,10 @@ a {
   letter-spacing: 2px;
 }
 @media (max-width: 600px) {
+
+#snow {
+  height: 85%;
+}
 
 body {
   width: 90%;
