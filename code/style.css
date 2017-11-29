@@ -115,6 +115,7 @@ main {
   cursor: pointer;
 }
 
+
 /*IF WINDOW IS OPEN*/
 /*NOTE: BACKGROUND COLOR SET TO #000000*/
 /*NOTE: POSITION SET TO RELATIVE*/
@@ -122,6 +123,7 @@ main {
   background: #000000;
   position: relative;
   cursor: pointer;
+
 }
 
 /*IF WINDOW IS OPEN*/
@@ -146,6 +148,7 @@ main {
   background-image: url("./images/saffrankolasnittar.jpg");
   content: "1";
 }
+
 
 /*IF WINDOW FOR DAY 02 IS OPEN*/
 #window-day-02.window-is-open::after {

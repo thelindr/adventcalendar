@@ -3,7 +3,29 @@
 @import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas|Open+Sans");
 
 html {
-  background: #3A1D58;
+  background: #B0D0B0;
+  animation: fadein 2s;
+  }
+
+  @keyframes fadein {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+      }
+    }
+  }
+    @-webkit-keyframes fadein { /* Safari and Chrome */
+        from {
+            opacity:0;
+        }
+        to {
+           opacity:1;
+    }
+  }
+}
+}
 }
 
 body {
