@@ -83,6 +83,16 @@ a {
   text-align: center;
 }
 
+/*HEADER YEAR LEFT ARROW*/
+.adv-cal-header-year::before {
+  content: "\2190  \2022  "
+}
+
+/*HEADER YEAR RIGHT ARROW*/
+.adv-cal-header-year::after {
+  content: "  \2022  \2192"
+}
+
 main {
   /*INTENTIONALLY LEFT BLANK*/
 }
