@@ -32,6 +32,26 @@ h1 {
   font-weight: normal;
 }
 
+.audio {
+  display: none;
+}
+
+.back-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  text-align: center;
+}
+
+a {
+  border: none;
+  color: #4F8C69;
+  font-family: cubano;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
 /*OVERRIDE DEFAULT BACKGROUND FOR STARTPAGE*/
 .adv-cal-startpage {
   background: #f8f8f8 url("./images/background-desktop-03.png") 0 0 / 100% auto no-repeat;
