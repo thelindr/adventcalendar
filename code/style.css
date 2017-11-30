@@ -197,7 +197,7 @@ main {
 
 /*IF WINDOW FOR DAY 05 IS OPEN*/
 #window-day-05.window-is-open::after {
-  background-image: url("./images/pepparkakspaj.jpg");
+  background-image: url("./images/pepparkakspaj-2.jpg");
   content: "5";
 }
 
