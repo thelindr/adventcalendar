@@ -39,7 +39,7 @@ h1 {
   text-align: center;
   border: none;
   color: #4F8C69;
-  font-family: cubano;
+  font-family: 'Cubano Regular';
   font-size: 18px;
   letter-spacing: 1px;
 }
@@ -179,7 +179,7 @@ main {
 
 /*IF WINDOW FOR DAY 02 IS OPEN*/
 #window-day-02.window-is-open::after {
-  background-image: url("./images/kanelbullesockerkaka.jpg");
+  background-image: url("./images/kanelbullesockerkaka-2.jpg");
   content: "2";
 }
 
@@ -197,7 +197,7 @@ main {
 
 /*IF WINDOW FOR DAY 05 IS OPEN*/
 #window-day-05.window-is-open::after {
-  background-image: url("./images/pepparkakspaj.jpg");
+  background-image: url("./images/pepparkakspaj-2.jpg");
   content: "5";
 }
 
@@ -209,13 +209,13 @@ main {
 
 /*IF WINDOW FOR DAY 07 IS OPEN*/
 #window-day-07.window-is-open::after {
-  background-image: url("./images/pepparkakskolor.jpg");
+  background-image: url("./images/pepparkakskola-2.jpg");
   content: "7";
 }
 
 /*IF WINDOW FOR DAY 08 IS OPEN*/
 #window-day-08.window-is-open::after {
-  background-image: url("./images/christmastreebrownies.jpg");
+  background-image: url("./images/christmastreebrownies-2.jpg");
   content: "8";
 }
 
@@ -275,7 +275,7 @@ main {
 
 /*IF WINDOW FOR DAY 18 IS OPEN*/
 #window-day-18.window-is-open::after {
-  background-image: url("./images/kanelbullemuffin.jpg");
+  background-image: url("./images/kanelbullemuffins.jpg");
   content: "18";
 }
 

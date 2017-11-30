@@ -1,7 +1,10 @@
-// DATE OBJECT FOR CURRENT TIME
-const currentTime = new Date()
+// DATE OBJECT FOR CURRENT TIME (SYSTEM TIME)
+// const currentTime = new Date()
 
-// ARRAY OF DATE OBJECTS (INCLUDING TEST DATE OBJECT)
+// ***ONLY USE FOR TEST*** SET CURRENT TIME TO 24 DEC 2017
+const currentTime = new Date(2017,11,24)
+
+// ARRAY OF DATE OBJECTS FOR DECEMBER 2017
 const days = [
   new Date(2017,11,1),
   new Date(2017,11,2),
@@ -26,23 +29,24 @@ const days = [
   new Date(2017,11,21),
   new Date(2017,11,22),
   new Date(2017,11,23),
-  new Date(2017,11,24),
-  new Date(2017,10,29) // ONLY USE FOR TEST: THIS DATE OBJECT CAN BE SET TO ANY DATE AND USED IN CODE BELOW FOR TEST PURPOSES
+  new Date(2017,11,24)
 ]
 
 // FUNCTION: COMPARE CURRENT TIME WITH A SPECIFIC DATE
-// IF CURRENT DATE > SPECIFIC DATE, THEN THIS FUNCTION RETURNS 2
-// ELSE IF CURRENT DATE == SPECIFIC DATE, THEN THIS FUNCTION RETURNS 1
-// ELSE THIS FUNCTION RETURNS 0
-// NOTE: AFTER 2017-12-31 THIS FUNCTION WILL ALWAYS RETURN 0 WHEN USED FOR THE 2017 ADVENT CALENDAR
+// NOTE: THIS FUCTION IS USED/INVOKED IN BOTH 'indexpage.js' AND 'redirection_days.js'
+// HOW THIS FUNCTION WORKS:
+  // IF CURRENT DATE > SPECIFIC DATE, THEN THIS FUNCTION RETURNS 2
+  // ELSE IF CURRENT DATE == SPECIFIC DATE, THEN THIS FUNCTION RETURNS 1
+  // ELSE THIS FUNCTION RETURNS 0
+  // NOTE: AFTER 2017-12-31 THIS FUNCTION WILL ALWAYS RETURN 0 WHEN USED FOR THE 2017 ADVENT CALENDAR
 const checkCurrentTimeAndDay = (checkThisDay) => {
   if (currentTime.getFullYear() == checkThisDay.getFullYear() && // IF YEAR FROM CURRENT TIME IS EQUAL TO YEAR FROM SPECIFIC DATE
       currentTime.getMonth() == checkThisDay.getMonth() && // AND IF MONTH FROM CURRENT TIME IS EQUAL TO YEAR FROM SPECIFIC DATE
-      currentTime.getDate() > checkThisDay.getDate()) { // AND IF DAY FROM CURRENT TIME IS MORE THAN DAY FROM SPECIFIC DATE
+      currentTime.getDate() > checkThisDay.getDate()) { // AND IF DAY FROM CURRENT TIME IS **MORE THAN** DAY FROM SPECIFIC DATE
         return 2
       } else if (currentTime.getFullYear() == checkThisDay.getFullYear() && // IF YEAR FROM CURRENT TIME IS EQUAL TO YEAR FROM SPECIFIC DATE
                  currentTime.getMonth() == checkThisDay.getMonth() && // AND IF MONTH FROM CURRENT TIME IS EQUAL TO YEAR FROM SPECIFIC DATE
-                 currentTime.getDate() == checkThisDay.getDate()) { // AND IF DAY FROM CURRENT TIME IS EQUAL TO DAY FROM SPECIFIC DATE
+                 currentTime.getDate() == checkThisDay.getDate()) { // AND IF DAY FROM CURRENT TIME IS **EQUAL TO** DAY FROM SPECIFIC DATE
                    return 1
                  } else {
                    return 0
