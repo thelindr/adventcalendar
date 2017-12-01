@@ -118,6 +118,9 @@ main {
   .recipe-back-btn {
     width: 50%;
   }
+.recipe-back-btn:hover {
+      width: 75%;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
@@ -130,4 +133,7 @@ main {
   .recipe-back-btn {
     width: 75%;
   }
+.recipe-back-btn:hover {
+    width: 100%;
+}
 }
