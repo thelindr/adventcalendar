@@ -323,6 +323,7 @@ main {
 /*IF WINDOW FOR DAY 24 IS OPEN*/
 #window-day-24.window-is-open::after {
   background-image: url("https://media.giphy.com/media/bJB4eZiGTODw4/giphy.gif");
+  background-position: 50% center;
   content: "24";
 }
 
