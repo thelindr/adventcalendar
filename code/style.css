@@ -44,6 +44,16 @@ h1 {
   letter-spacing: 1px;
 }
 
+/*FOOTER LEFT ARROW*/
+.adv-cal-back-button::before {
+  content: "\2191  "
+}
+
+/*FOOTER RIGHT ARROW*/
+.adv-cal-back-button::after {
+  content: "  \2191"
+}
+
 a {
   text-decoration: none;
   color: #4F8C69;
