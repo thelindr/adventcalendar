@@ -106,6 +106,18 @@ main {
   width: 30%;
 }
 
+.recipe-tips {
+  padding-bottom: 25px;
+}
+
+.recipe-byline {
+  display: flex;;
+}
+.name {
+  font-family: 'Clicker Script', cursive;
+  font-size: 32px;
+}
+
 @media (max-width: 600px) {
   #chokladbollar, .text-wrapper#day-14, .bottom-wrapper#day-14 {
     width: 100%;
