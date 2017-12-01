@@ -82,7 +82,6 @@ main {
   object-fit: cover;
   border-radius: 50%;
   width: 500px;
-  /*height: 500px;*/
 }
 
 .text-wrapper-top#day-19 {
@@ -105,7 +104,7 @@ main {
 }
 
 .recipe-back-btn:hover {
-  background-color: #9b7d8d;
+  background-color: #A1E0DE;
   letter-spacing: 2px;
 }
 
