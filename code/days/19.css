@@ -106,6 +106,7 @@ main {
 .recipe-back-btn:hover {
   background-color: #A1E0DE;
   letter-spacing: 2px;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
@@ -117,6 +118,9 @@ main {
   }
   .recipe-back-btn {
     width: 50%;
+  }
+.recipe-back-btn:hover {
+      width: 75%;
   }
 }
 
@@ -130,4 +134,7 @@ main {
   .recipe-back-btn {
     width: 75%;
   }
+.recipe-back-btn:hover {
+    width: 100%;
+}
 }
