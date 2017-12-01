@@ -25,7 +25,6 @@ html {
     }
   }
 
-
 body {
   margin-top: 40px;
 }
@@ -58,6 +57,15 @@ body {
   padding: 10px 20px 20px 20px;
 }
 
+.recipe-byline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
 header {
   width: 100%;
   text-align: center;
@@ -70,11 +78,18 @@ img {
   object-fit: cover;
 }
 
+.badge {
+  width: 50px;
+  height: 50px;
+  padding-left: 5px;
+  object-fit: contain;
+}
+
 p {
   font-family: sans-serif;
   font-weight: 200;
   font-size: 15px;
-  margin-top: 0;
+  margin: 0;
 }
 
 li {
@@ -116,12 +131,6 @@ h3 {
   margin: 0;
 }
 
-.recipe-byline {
-  width: 100%;
-  text-align: center;
-  height: 50px;
-}
-
 .recipe-back-btn {
   width: 100%;
   text-align: center;
@@ -132,7 +141,7 @@ a {
   color: white;
   padding: 10px 20px;
   text-align: center;
-  border-width: medium;
+  border-width: thin;
   border-radius: 20px;
   text-decoration: none;
   display: inline-block;
