@@ -161,9 +161,20 @@ h3 {
 }
 
 .recipe-byline {
+  display: flex;
+  justify-content: center;
   width: 100%;
   text-align: center;
   height: 50px;
+  margin-bottom: 50px;
+}
+
+.badge {
+  width: 50px;
+  height: 50px;
+  border-radius: 0;
+  border: none;
+  margin: 0 0 50px 25px;
 }
 
 .recipe-back-btn {
