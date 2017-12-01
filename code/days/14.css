@@ -113,6 +113,7 @@ main {
 .recipe-byline {
   display: flex;;
 }
+
 .name {
   font-family: 'Clicker Script', cursive;
   font-size: 32px;
