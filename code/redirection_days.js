@@ -5,8 +5,12 @@ const indexOfSecondCharInDate = window.location.href.lastIndexOf("/") + 2 // GET
 const secondCharInDate = window.location.href.charAt(indexOfSecondCharInDate) // GET THE SECOND **CHAR** IN "DD"
 const dateInURL = `${firstCharInDate}${secondCharInDate}` // "DD"
 
-// IF CURRENT DATE < 2017-11-DD (DD DEC 2017), THEN REDIRECT USER TO INDEX PAGE
-// NOTE: AFTER 2017-12-31 THIS WILL ALWAYS BE TRUE AND REDIRECT WILL ALWAYS OCCUR
-if (checkCurrentTimeAndDay(new Date(2017,11,dateInURL)) == 0) {
-  window.location.href = "../index.html"
-  }
+// IF CURRENT DATE < 2017-11-DD (DD DEC 2017), THEN HIDE HTML CONTENT, PLAY AUDIO AND REDIRECT USER TO INDEX PAGE
+if (checkCurrentTimeAndDay(new Date(2017,11,dateInURL)) == 0) { // NOTE: AFTER 2017-12-31 THIS WILL ALWAYS BE TRUE
+  document.getElementsByTagName("html")[0].style.display = "none" // DISPLAY NONE (CONTENT)
+  const redirectionAudio = new Audio("../music/fail_1.mp3")
+  redirectionAudio.play() // PLAY AUDIO
+  redirectionAudio.addEventListener("ended", () => { // WHEN AUDIO HAS ENDED
+    window.location.href = "../index.html" // REDIRECTION
+  })
+}
