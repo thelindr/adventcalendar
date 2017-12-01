@@ -4,7 +4,28 @@
 
 html {
   background: #f97b7b;
-}
+  animation: fadein 2s;
+  }
+
+  @keyframes fadein {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+      }
+    }
+  }
+    @-webkit-keyframes fadein { /* Safari and Chrome */
+        from {
+            opacity:0;
+        }
+        to {
+           opacity:1;
+    }
+  }}
+
+
 
 body {
   margin-top: 40px;
