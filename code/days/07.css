@@ -108,7 +108,6 @@ li {
   font-style: italic;
   display: flex;
   padding-bottom: 25px;
-  }
 }
 
 /*THIS CLASS IS USED TO APPLY SOME "MARGIN" TO THE INNER ELEMENT ('.recipe-back-btn')*/

@@ -105,6 +105,7 @@ li {
 
 .recipe-byline {
   font-style: italic;
+  display: flex;
 }
 
 /*THIS CLASS IS USED TO APPLY SOME "MARGIN" TO THE INNER ELEMENT ('.recipe-back-btn')*/
