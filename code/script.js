@@ -2,7 +2,7 @@
 // const currentTime = new Date()
 
 // ***ONLY USE FOR TEST*** SET CURRENT TIME TO 24 DEC 2017
-const currentTime = new Date(2017,11,24)
+const currentTime = new Date(2017,11,14)
 
 // ARRAY OF DATE OBJECTS FOR DECEMBER 2017
 const days = [
