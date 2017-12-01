@@ -195,7 +195,7 @@ main {
 
 /*IF WINDOW FOR DAY 03 IS OPEN*/
 #window-day-03.window-is-open::after {
-  background-image: url("./images/saffranssockerkaka.jpg");
+  background-image: url("https://media.giphy.com/media/l0HlyaiBwRkW6QMKs/source.gif");
   content: "3";
 }
 
@@ -237,7 +237,7 @@ main {
 
 /*IF WINDOW FOR DAY 10 IS OPEN*/
 #window-day-10.window-is-open::after {
-  background-image: url("./images/saffranskladdkaka.jpg");
+  background-image: url("https://media.giphy.com/media/l4JyO55lBkK587gre/source.gif");
   content: "10";
 }
 
@@ -279,9 +279,10 @@ main {
 
 /*IF WINDOW FOR DAY 17 IS OPEN*/
 #window-day-17.window-is-open::after {
-  background-image: url("./images/banankaka.jpg");
+  background-image: url("https://media.giphy.com/media/l0MYt4mSPCUQRkIBG/source.gif");
   content: "17";
 }
+
 
 /*IF WINDOW FOR DAY 18 IS OPEN*/
 #window-day-18.window-is-open::after {
@@ -321,7 +322,7 @@ main {
 
 /*IF WINDOW FOR DAY 24 IS OPEN*/
 #window-day-24.window-is-open::after {
-  background-image: url("./images/citroncheesecake.jpg");
+  background-image: url("https://media.giphy.com/media/bJB4eZiGTODw4/giphy.gif");
   content: "24";
 }
 
