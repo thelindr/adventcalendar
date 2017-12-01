@@ -103,6 +103,7 @@ main {
 .recipe-back-btn:hover {
   background-color: #A1E3C3;
   letter-spacing: 2px;
+  width: 30%;
 }
 
 @media (max-width: 600px) {
