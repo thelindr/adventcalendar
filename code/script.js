@@ -33,9 +33,17 @@ const days = [
 // FUNCTION: COMPARE CURRENT TIME WITH A SPECIFIC DATE. IF CURRENT DATE >= SPECIFIC DATE, THEN THIS FUNCTION RETURNS true
 // NOTE: AFTER 2017-12-31 THIS FUNCTION WILL ALWAYS RETURN false WHEN USED FOR THE 2017 ADVENT CALENDAR
 const checkCurrentTimeAndDay = (checkThisDay) => {
-  return (currentTime.getFullYear() == checkThisDay.getFullYear() && // IF YEAR FROM CURRENT TIME IS EQUAL TO YEAR FROM SPECIFIC DATE
-   currentTime.getMonth() == checkThisDay.getMonth() && // AND IF MONTH FROM CURRENT TIME IS EQUAL TO YEAR FROM SPECIFIC DATE
-   currentTime.getDate() >= checkThisDay.getDate()) // AND IF DAY FROM CURRENT TIME IS MORE THAN OR EQUAL TO DAY FROM SPECIFIC DATE
+  if (currentTime.getFullYear() == checkThisDay.getFullYear() && // IF YEAR FROM CURRENT TIME IS EQUAL TO YEAR FROM SPECIFIC DATE
+      currentTime.getMonth() == checkThisDay.getMonth() && // AND IF MONTH FROM CURRENT TIME IS EQUAL TO YEAR FROM SPECIFIC DATE
+      currentTime.getDate() > checkThisDay.getDate()) { // AND IF DAY FROM CURRENT TIME IS MORE THAN TO DAY FROM SPECIFIC DATE
+        return 2
+      } else if (currentTime.getFullYear() == checkThisDay.getFullYear() && // IF YEAR FROM CURRENT TIME IS EQUAL TO YEAR FROM SPECIFIC DATE
+                 currentTime.getMonth() == checkThisDay.getMonth() && // AND IF MONTH FROM CURRENT TIME IS EQUAL TO YEAR FROM SPECIFIC DATE
+                 currentTime.getDate() == checkThisDay.getDate()) { // AND IF DAY FROM CURRENT TIME IS EQUAL TO DAY FROM SPECIFIC DATE
+                   return 1
+                 } else {
+                   return 0
+                 }
 }
 
 // FUNCTION: CHECK ALL DAYS---WILL ONLY WORK WHEN CURRENT TIME IS 1--31 DEC
@@ -43,13 +51,16 @@ const checkCurrentTimeAndDay = (checkThisDay) => {
 //   days.forEach((day, index) => {
 //     actualDay = index + 1
 //     dayString = (actualDay < 10 ? "0" + actualDay : actualDay)
-//     if (checkCurrentTimeAndDay(day)) {
+//     if (checkCurrentTimeAndDay(day) == 2) { //UPDATE
 //       const windowElement = document.getElementById(`window-day-${dayString}`)
 //       windowElement.classList.toggle("window-is-open")
 //       windowElement.onclick = () => {
 //         window.location.href = `./days/${dayString}.html`
 //       }
-//     }
+//     } else if (checkCurrentTimeAndDay(day) == 1) {
+//         const windowElement = document.getElementById(`window-day-${dayString}`)
+//         windowElement.classList.toggle("window-is-test")
+//       }
 //   })
 // }
 
@@ -57,10 +68,13 @@ const checkCurrentTimeAndDay = (checkThisDay) => {
 // checkAllDays()
 
 // USE FOR TEST: APPLIED TO WINDOW FOR DAY 1
-if (checkCurrentTimeAndDay(days[24])) {
+if (checkCurrentTimeAndDay(days[24]) == 2) {
   const windowElement = document.getElementById("window-day-01")
   windowElement.classList.toggle("window-is-open")
   windowElement.onclick = () => {
     window.location.href = "./days/01.html"
   }
-}
+} else if (checkCurrentTimeAndDay(days[24]) == 1) {
+    const windowElement = document.getElementById("window-day-01")
+    windowElement.classList.toggle("window-is-test")
+  }
