@@ -1,8 +1,8 @@
 // DATE OBJECT FOR CURRENT TIME (SYSTEM TIME)
-const currentTime = new Date()
+// const currentTime = new Date()
 
 // ***ONLY USE FOR TEST*** SIMULATE CURRENT TIME
-// const currentTime = new Date(2017,11,14)
+const currentTime = new Date(2017,11,20)
 
 // ARRAY OF DATE OBJECTS FOR DECEMBER 2017
 const days = [
